@@ -1,0 +1,25 @@
+/* src/components/VideoSlider.css */
+.video-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure it's behind other content */
+  background-color: black; /* Avoid white spaces around videos */
+}
+
+.video-slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the video fits within the container without being cropped */
+}
